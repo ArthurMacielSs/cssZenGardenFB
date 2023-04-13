@@ -1,3 +1,19 @@
 .container{
+    font-family: Verdana; /*fonte*/
+    background-color: blueviolet; /*cor da fonte*/
+    color: aliceblue; /*cor da letra*/
+    line-height: 1.5rem; /*distancia entre as linhas*/
+    text-align: center; /*alinhamento do texto, no centro*/
+    display: flex; /*inicia o flexbox*/
+    flex-direction: column; /*coloca os elementos um em cima do outro*/
     
+}
+
+
+.row{
+
+}
+
+.intro{
+
 }
