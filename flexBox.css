@@ -14,13 +14,18 @@
     flex-direction: column; /*coloca os elementos um em cima do outro*/
     align-items: flex-start; /*define os itens para começarem o mais em cima possível*/
     gap: 20px; /*espaço entre as linhas*/
+    justify-content: center;
+}
+h1,h2{
+    text-align: center;
 }
 
+
 .intro{
+    text-align: center;
    display: flex;
    flex-direction: column; /*coloca os elementos um em cima do outro*/
-   align-items: flex-start; /*define os itens para começarem o mais em cima possível*/
-   gap: 20px; /*espaço entre as linhas*/
+    gap: 20px; /*espaço entre as linhas*/
 
 }
 .row{
