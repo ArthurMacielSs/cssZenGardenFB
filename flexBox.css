@@ -28,22 +28,19 @@ h1,h2{
    align-items: flex-start; /*define os itens para começarem o mais em cima possível*/
     justify-content: space-between; /* coloca os elementos para ocuparem o maior espaço possível*/
     gap: 20px; /* espaço entre as linhas*/
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
 }
 .main-supporting{
     display: flex;
-    order: 1 ;
-    flex-basis: 80%;
+    order: 0 ;
+    flex-basis: 40%;
     flex-wrap: wrap;
 }
 .sidebar{
     display: flex;
-    flex-direction: row;
-    order: 1 ;
-    position: absolute;
-    left: 80%;
-    float: right;
+     order: 1 ;
+    width: 40%;
    
 }
 
@@ -87,3 +84,26 @@ abbr{
     color: #ffe8c2;
 }
 
+
+
+
+@media screen and (max-width: 560px){
+    .row{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+    .main-supporting{
+        display: flex;
+        flex-wrap: wrap;
+        order:0;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        order:1;
+      }
+     
+    
+    
+}
