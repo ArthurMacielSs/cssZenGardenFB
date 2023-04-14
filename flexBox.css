@@ -4,16 +4,83 @@
     color: aliceblue; /*cor da letra*/
     line-height: 1.5rem; /*distancia entre as linhas*/
     text-align: center; /*alinhamento do texto, no centro*/
-    display: flex; /*inicia o flexbox*/
-    flex-direction: column; /*coloca os elementos um em cima do outro*/
+    margin-bottom: 1%; /*define a margem embaixo*/
     
-}
+    
 
 
-.row{
-
+    display: flex; /*inicia o flexbox*/
+    flex-wrap: wrap;
+    flex-direction: column; /*coloca os elementos um em cima do outro*/
+    align-items: flex-start; /*define os itens para começarem o mais em cima possível*/
+    gap: 20px; /*espaço entre as linhas*/
 }
 
 .intro{
+   display: flex;
+   flex-direction: column; /*coloca os elementos um em cima do outro*/
+   align-items: flex-start; /*define os itens para começarem o mais em cima possível*/
+   gap: 20px; /*espaço entre as linhas*/
 
 }
+.row{
+    display: flex;
+    flex-direction: row; /*coloca os elementos um em cima do outro*/
+   align-items: flex-start; /*define os itens para começarem o mais em cima possível*/
+    justify-content: space-between; /* coloca os elementos para ocuparem o maior espaço possível*/
+    gap: 20px; /* espaço entre as linhas*/
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+    
+
+
+}
+.main-supporting{
+    display: flex;
+    order: 1 ;
+    width: 80%;
+    flex-wrap: wrap;
+    
+  
+
+}
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    order: 1 ;
+    position: absolute;
+    left: 80%;
+    float: right;
+   
+}
+
+.requirements{
+    order: 1;
+}
+
+footer { /*rodapé da página html*/
+    position: fixed; /*geralmente os elementos se mantem fixos de acordo com a página*/
+    /*nesse caso do position deixamos o rodape fixo (não muda de acordo com a página)*/
+    bottom:0; /*define a posição vertical do elemento em relação a janela do navegador*/
+    background-color: red; /*define a cor do rodape*/
+    color: black; /*define a cor das letras do rodape*/
+    text-align: center; /*alinha o texto no centro*/
+    line-height: 2px; /*espaço para começar a escrita*/
+    display: block;
+   /* width: 100%; /*largura*/
+   padding: 1%; /*a distância entre o elemento e as bordas da página*/
+   width: 100%;
+   
+
+}
+footer a{ /*mexe nos links do footer */
+margin: 1%;
+margin-left: 1%; /*espaço a esquerda*/
+color: black;
+
+
+}
+
+
