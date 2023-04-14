@@ -4,7 +4,7 @@
     color: #F7EBEC;
     line-height: 1.5rem; /*distancia entre as linhas*/
     text-align: center; /*alinhamento do texto, no centro*/
-    margin-bottom: 1%; /*define a margem embaixo*/
+    margin-bottom: 2%; /*define a margem embaixo*/
     display: flex; /*inicia o flexbox*/
     flex-wrap: wrap;
     flex-direction: column; /*coloca os elementos um em cima do outro*/
@@ -34,7 +34,7 @@ h1,h2{
 .main-supporting{
     display: flex;
     order: 1 ;
-    width: 80%;
+    flex-basis: 80%;
     flex-wrap: wrap;
 }
 .sidebar{
@@ -61,7 +61,7 @@ footer { /*rodapé da página html*/
     line-height: 2px; /*espaço para começar a escrita*/
     display: block;
    /* width: 100%; /*largura*/
-   padding: 1%; /*a distância entre o elemento e as bordas da página*/
+   padding: 2%; /*a distância entre o elemento e as bordas da página*/
    width: 100%;
    
 
